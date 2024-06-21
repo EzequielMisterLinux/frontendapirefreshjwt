@@ -5,7 +5,7 @@ import Protected from './components/Protected';
 
 const App = () => {
   const [tokens, setTokens] = useState(() => {
-    // Intentar leer los tokens desde localStorage al iniciar la aplicación
+    
     const accessToken = localStorage.getItem('accessToken');
     const refreshToken = localStorage.getItem('refreshToken');
     return accessToken && refreshToken ? { accessToken, refreshToken } : null;
